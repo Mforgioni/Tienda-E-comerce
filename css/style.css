@@ -1,0 +1,125 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+h1 {
+  margin-left: 2rem;
+}
+
+/*___________________________index movil_________________________________________*/
+.encabezado {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: rgb(113, 173, 113);
+  align-items: center;
+  height: 9rem;
+  width: 100%;
+}
+
+.encabezado img {
+  height: 9rem;
+}
+
+.navegador {
+  background-color: rgb(113, 173, 113);
+  padding: 0.3rem 0 0.3rem 0;
+}
+
+.btn,
+.btn-outline-success,
+.me-2 {
+  height: 2.5rem;
+  color: white;
+  font-weight: bold;
+  border: solid white 1px;
+}
+.fa-solid {
+  margin-left: 0.5rem;
+}
+
+.navegador button {
+  margin-right: 0.2rem;
+}
+
+.publicidad {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem 0 1rem 0;
+}
+
+.oferta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black 2px;
+  height: 10rem;
+  width: 48%;
+  border-radius: 14px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(113, 173, 113);
+  height: 4rem;
+  padding: 0 1rem 0 1rem;
+}
+.redes {
+  height: 30px;
+  width: 30px;
+}
+
+/*_________________________acercade pag___________________________________*/
+
+.contenedor-acercade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgb(85, 131, 85);
+}
+.textos-acercade {
+  border-radius: 14px;
+  padding: 0.5rem;
+  background-color: rgb(113, 173, 113);
+  border-radius: 14px;
+  box-shadow: 2px 5px 15px  rgb(79, 114, 79);
+}
+h1 {
+  text-align: center;
+  padding: 0.1rem;
+  margin: auto;
+}
+p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/*__________________________contacto pag__________________________________*/
+
+.contenedor-acercade-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgb(85, 131, 85);
+}
+.textos-acercade-2 {
+  border-radius: 14px;
+  box-shadow: 2px 5px 15px  rgb(79, 114, 79);
+  padding: 0.5rem;
+  background-color: rgb(113, 173, 113);
+}
+.textos-acercade-2 h1 {
+  text-align: center;
+  padding: 1rem 1rem 0 1rem;
+  margin: auto;
+}
+.textos-acercade-2 p {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1.5rem 2rem 2rem 2rem;
+}
