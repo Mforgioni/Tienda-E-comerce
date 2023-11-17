@@ -120,6 +120,39 @@ p {
   margin-top: 2rem;
   padding: 1.5rem 2rem 2rem 2rem;
 }
+
+/*__________________________Tienda pag________________________*/
+
+.card-title {
+text-align: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/*__________________________carrito  pag________________________*/
+.estiloCarrito {
+  display: flex;
+  flex-direction: row;
+}
+
+.muestraElegida {
+ display: flex;
+ justify-items: center;
+}
+
+.muestraElegida img {
+  height: 160px;
+  width: 160px;
+}
+
+.zideMustra {
+  height: 140px;
+  width: 150px;
+}
+
 /*________________________ index modo web_______________________*/ 
 @media (min-width: 600px) {
   .navbar .container-fluid {

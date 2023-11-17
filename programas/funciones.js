@@ -2,6 +2,7 @@
 
 const carritoProductos = JSON.parse(localStorage.getItem("miCarrito")) || [];
 const contenedor = document.querySelector("div.contenedor#tienda-contenedor");
+const contenedorCarrito = document.querySelector("pantallasCarrito")
 const carritoBoton = document.querySelector("nav a:last-child i.fa-cart-shopping")
 
 
@@ -17,20 +18,19 @@ function crearCardError() {
 
 
 
-function crearCardHtml({ nombre, imagen, precio, tipo, id }) {
+function crearCardHtml({ nombre, imagen, precio, tipo, id, alto, diametro, detalle }) {
     return `<div class="card" style="width: 18rem;">
                 <img src="${imagen}" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${nombre}</h5>
-                    <p class="card-text">${precio}</p>
+                    <p class="card-text">${detalle}</p>
+                    <p class="card-text">Altura: ${alto} Diametro ${diametro}</p>
+                    <p class="card-text">$${precio}</p>
                     <button id="${id}" class="btn btn-primary">Comprar</button>
                 </div>
             </div>`;
 }
 
-function crearInfoCarrito() {
-    return ``;
-}
 
 function cargarProductos() {
     contenedor.innerHTML = "";
@@ -50,10 +50,10 @@ function activarBotones() {
             const pantallaElegida = pantallas.find((pantalla) => pantalla.id === id);
             carritoProductos.push(pantallaElegida);
             localStorage.setItem("miCarrito", JSON.stringify(carritoProductos));
+            console.log(carritoProductos)
+
         });
     });
 }
-
 cargarProductos();
-
 
