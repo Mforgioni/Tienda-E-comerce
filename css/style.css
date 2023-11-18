@@ -136,6 +136,7 @@ text-align: center;
 .estiloCarrito {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .muestraElegida {
