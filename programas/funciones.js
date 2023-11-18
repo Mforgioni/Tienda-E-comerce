@@ -1,10 +1,5 @@
-
-
 const carritoProductos = JSON.parse(localStorage.getItem("miCarrito")) || [];
 const contenedor = document.querySelector("div.contenedor#tienda-contenedor");
-const contenedorCarrito = document.querySelector("pantallasCarrito")
-const carritoBoton = document.querySelector("nav a:last-child i.fa-cart-shopping")
-
 
 function crearCardError() {
     return `<div class="card-error";">
@@ -16,21 +11,18 @@ function crearCardError() {
             </div>`;
 }
 
-
-
 function crearCardHtml({ nombre, imagen, precio, tipo, id, alto, diametro, detalle }) {
-    return `<div class="card" style="width: 18rem;">
+    return `<div class="card tarjetaTienda" style="width: 18rem;">
                 <img src="${imagen}" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">${nombre}</h5>
+                <div class="card-body cuerpoTarjetaTienda">
+                    <h5 class="card-title nombreTarjetaTienda">${nombre}</h5>
                     <p class="card-text">${detalle}</p>
                     <p class="card-text">Altura: ${alto} cm. // Diametro: ${diametro} cm.</p>
                     <p class="card-text">$${precio}</p>
-                    <button id="${id}" class="btn btn-primary">Comprar</button>
+                    <button data-id="${id}" class="btn btn-primary">Comprar</button>
                 </div>
             </div>`;
 }
-
 
 function cargarProductos() {
     contenedor.innerHTML = "";
@@ -46,14 +38,20 @@ function activarBotones() {
     const botonesAgregar = document.querySelectorAll(".btn.btn-primary");
     botonesAgregar.forEach((boton) => {
         boton.addEventListener("click", (e) => {
-            const id = parseInt(e.target.id);
+            const id = parseInt(e.target.dataset.id);
             const pantallaElegida = pantallas.find((pantalla) => pantalla.id === id);
             carritoProductos.push(pantallaElegida);
             localStorage.setItem("miCarrito", JSON.stringify(carritoProductos));
-            console.log(carritoProductos)
-
+            console.log(carritoProductos);
+            actualizarCantidadCarrito(); 
         });
     });
 }
-cargarProductos();
 
+function actualizarCantidadCarrito() {
+    const cantidadCarrito = document.querySelector(".cuentaCarrito");
+    cantidadCarrito.textContent = `= ${carritoProductos.length}`;
+}
+
+actualizarCantidadCarrito(); 
+cargarProductos();

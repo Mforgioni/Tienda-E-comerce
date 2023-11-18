@@ -9,13 +9,14 @@ function crearInfoCarrito() {
 
     let total = 0;
 
-    carritoProductos.forEach((producto) => {
+    carritoProductos.forEach((producto, index) => {
       const cardHtml = `
-                <div class="card muestraElegida" style="width: 10rem;">
+                <div class="card muestraElegida estiloTarjetaCarrito" style="width: 9rem;">
                     <img src="${producto.imagen}" alt="...">
-                    <div class="card-body  zideMustra">
-                        <h5 class="card-title">${producto.nombre}</h5>
-                        <p class="card-text">$${producto.precio}</p>
+                    <div class="card-body  zideMustra cuerpoTarjeta">
+                        <h5 class="card-title nombreTarjeta">${producto.nombre}</h5>
+                        <p class="card-text precioTarjeta">$${producto.precio}</p>
+                        <button class="btn btn-primary" onclick="eliminarProducto(${index})">Quitar</button>
                     </div>
                 </div>
             `;
@@ -26,6 +27,12 @@ function crearInfoCarrito() {
 
     totalElement.textContent = `Total: $${total}`;
   }
+}
+
+function eliminarProducto(index) {
+  carritoProductos.splice(index, 1); // Elimina el producto en la posición 'index'
+  localStorage.setItem("miCarrito", JSON.stringify(carritoProductos)); // Actualiza el localStorage
+  crearInfoCarrito(); // Vuelve a crear la información del carrito en la interfaz
 }
 
 document.addEventListener("DOMContentLoaded", () => {
