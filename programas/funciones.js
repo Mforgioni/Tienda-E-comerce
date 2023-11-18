@@ -24,7 +24,7 @@ function crearCardHtml({ nombre, imagen, precio, tipo, id, alto, diametro, detal
                 <div class="card-body">
                     <h5 class="card-title">${nombre}</h5>
                     <p class="card-text">${detalle}</p>
-                    <p class="card-text">Altura: ${alto} Diametro ${diametro}</p>
+                    <p class="card-text">Altura: ${alto} cm. // Diametro: ${diametro} cm.</p>
                     <p class="card-text">$${precio}</p>
                     <button id="${id}" class="btn btn-primary">Comprar</button>
                 </div>
