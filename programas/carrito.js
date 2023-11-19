@@ -11,12 +11,12 @@ function crearInfoCarrito() {
 
     carritoProductos.forEach((producto, index) => {
       const cardHtml = `
-                <div class="card muestraElegida estiloTarjetaCarrito" style="width: 9rem;">
+                <div class="card muestraElegida estiloTarjetaCarrito" style="width: 9.5rem;">
                     <img src="${producto.imagen}" alt="...">
                     <div class="card-body  zideMustra cuerpoTarjeta">
                         <h5 class="card-title nombreTarjeta">${producto.nombre}</h5>
                         <p class="card-text precioTarjeta">$${producto.precio}</p>
-                        <button class="btn btn-primary" onclick="eliminarProducto(${index})">Quitar</button>
+                        <button class="btn btn-primary bontonCarritoQuitar" onclick="eliminarProducto(${index})">Quitar</button>
                     </div>
                 </div>
             `;

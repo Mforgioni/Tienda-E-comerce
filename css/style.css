@@ -1,6 +1,9 @@
 body {
   box-sizing: border-box;
   margin: 0;
+  font-family: sans-serif;
+  font-weight: 900;
+  background-color: rgba(0, 128, 0, 0.596);
 }
 h1 {
   margin-left: 2rem;
@@ -11,7 +14,9 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  background-color: rgb(113, 173, 113);
+  background-image: url(../imagenes/fondoHrder.jpg);
+  background-size: 100% 100%;
+  background-position: center;
   align-items: center;
   height: 9rem;
   width: 100%;
@@ -20,12 +25,17 @@ h1 {
 .encabezado img {
   height: 9rem;
 }
-
+.encabezado h1 {
+  background-color: rgba(255, 255, 255, 0.459);
+}
 .navegador {
   background-color: rgb(113, 173, 113);
   padding: 0.3rem 0 0.3rem 0;
 }
 
+.navegadorboton:hover {
+  background-color: rgb(18, 78, 18);
+}
 .btn,
 .btn-outline-success,
 .me-2 {
@@ -87,7 +97,7 @@ footer {
   padding: 0.5rem;
   background-color: rgb(113, 173, 113);
   border-radius: 14px;
-  box-shadow: 2px 5px 15px  rgb(79, 114, 79);
+  box-shadow: 2px 5px 15px rgb(79, 114, 79);
 }
 h1 {
   text-align: center;
@@ -105,12 +115,12 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
   background-color: rgb(85, 131, 85);
 }
 .textos-acercade-2 {
   border-radius: 14px;
-  box-shadow: 2px 5px 15px  rgb(79, 114, 79);
+  box-shadow: 2px 5px 15px rgb(79, 114, 79);
   padding: 0.5rem;
   background-color: rgb(113, 173, 113);
 }
@@ -118,11 +128,14 @@ p {
   text-align: center;
   padding: 1rem 1rem 0 1rem;
   margin: auto;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.171);
+  border-radius: 12px;
 }
 .textos-acercade-2 p {
   text-align: center;
   margin-top: 2rem;
-  padding: 1.5rem 2rem 2rem 2rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
 
 /*__________________________Tienda pag________________________*/
@@ -130,50 +143,78 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: rgb(85, 131, 85);
 }
 .tarjetaTienda {
-  border: solid 1px black;
+  border: solid 1px rgb(85, 131, 85);
   overflow: hidden;
   margin: 0.4rem;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+  padding: 0.5rem;
+}
+.tarjetaTienda img {
+  border-radius: 14px 14px 0 0;
 }
 .card-title {
-text-align: center;
+  text-align: center;
 }
 .cuerpoTarjetaTienda {
-padding: 0.2rem;
+  background-color: rgb(113, 173, 113);
+  padding: 0.2rem;
 }
 .nombreTarjetaTienda {
   font-size: 2rem;
-  margin-top: 0.3rem;
+  margin-top: 0rem;
   font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.281);
+}
+.detalleTienda {
+  margin: 0;
+}
+.medidasTienda {
+  margin: 0;
+}
+.preciosTienda {
+  font-size: 2rem;
 }
 .card-body {
   display: flex;
   flex-direction: column;
+  border-radius: 0 0 14px 14px;
 }
-
+.botonTarjetaTienda {
+  background-color: rgb(36, 107, 36);
+  margin-bottom: 0.3rem;
+}
+.botonTarjetaTienda:hover {
+  background-color: rgb(9, 56, 9);
+}
 /*__________________________carrito  pag________________________*/
 .maine {
   display: flex;
   text-align: center;
   flex-direction: column;
+  background-color: rgb(24, 66, 7);
+  color: rgb(255, 255, 255);
 }
 .estiloCarrito {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: rgb(85, 131, 85);
 }
 .estiloTarjetaCarrito {
   border: solid 1px black;
   border-radius: 14px;
   background-color: rgb(99, 212, 99);
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
 .muestraElegida {
   overflow: hidden;
- display: flex;
- justify-items: center;
- margin: 5px;
+  display: flex;
+  justify-items: center;
+  margin: 5px;
 }
 
 .muestraElegida img {
@@ -189,50 +230,57 @@ padding: 0.2rem;
 .cuerpoTarjeta {
   padding: 0;
   height: auto;
+  background-color: rgb(113, 173, 113);
+  border-radius: 0 0 14px 14px;
 }
 .nombreTarjeta {
   margin: 0;
   font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.521);
 }
 .precioTarjeta {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 1px;
+  margin: 0;
 }
-/*________________________ index modo web_______________________*/ 
+.bontonCarritoQuitar {
+  margin: 0.3rem;
+  border-radius: 8px;
+  background-color: rgb(9, 56, 9);
+}
+/*________________________ index modo web_______________________*/
 @media (min-width: 600px) {
   .navbar .container-fluid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
   }
 }
 
 @media (min-width: 600px) {
   .navbar .container-fluid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
   }
 }
 
 @media (min-width: 720px) {
   .navbar .container-fluid {
-      gap: 3rem;
+    gap: 3rem;
   }
   h1 {
     font-size: 2.5rem;
   }
 }
 
-
 @media (min-width: 820px) {
   .navbar .container-fluid {
-      gap: 4rem;
+    gap: 4rem;
   }
   h1 {
     font-size: 3rem;
@@ -241,7 +289,7 @@ padding: 0.2rem;
 
 @media (min-width: 920px) {
   .navbar .container-fluid {
-      gap: 5rem;
+    gap: 5rem;
   }
   h1 {
     font-size: 3.5rem;
@@ -250,7 +298,7 @@ padding: 0.2rem;
 
 @media (min-width: 950px) {
   .navbar .container-fluid {
-      gap: 6rem;
+    gap: 6rem;
   }
   h1 {
     font-size: 4rem;
@@ -259,35 +307,31 @@ padding: 0.2rem;
 
 @media (min-width: 1300px) {
   .navbar .container-fluid {
-      gap: 7rem;
+    gap: 7rem;
   }
 
   .navbar .container-fluid a {
     width: 12rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+    height: 60vh; /* Ajusta la altura según la altura de la ventana */
+  }
+
+  .carousel-item {
+    text-align: center; /* Alinea el contenido en el centro verticalmente */
+    width: 100%; /* Asegura que el ancho sea el 100% del contenedor */
+    height: 100%;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
 }
-h1 {
-  font-size: 4rem;
-}
-
-.carousel-inner {
-  display: flex;
-  align-items: center;
-  height: 60vh; /* Ajusta la altura según la altura de la ventana */
-}
-
-.carousel-item {
-  text-align: center; /* Alinea el contenido en el centro verticalmente */
-  width: 100%; /* Asegura que el ancho sea el 100% del contenedor */
-  height: 100%;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-}
-
-
-}
-
-

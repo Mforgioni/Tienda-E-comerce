@@ -12,14 +12,14 @@ function crearCardError() {
 }
 
 function crearCardHtml({ nombre, imagen, precio, tipo, id, alto, diametro, detalle }) {
-    return `<div class="card tarjetaTienda" style="width: 18rem;">
+    return `<div class="card tarjetaTienda" style="width: 20rem;">
                 <img src="${imagen}" alt="...">
                 <div class="card-body cuerpoTarjetaTienda">
                     <h5 class="card-title nombreTarjetaTienda">${nombre}</h5>
-                    <p class="card-text">${detalle}</p>
-                    <p class="card-text">Altura: ${alto} cm. // Diametro: ${diametro} cm.</p>
-                    <p class="card-text">$${precio}</p>
-                    <button data-id="${id}" class="btn btn-primary">Comprar</button>
+                    <p class="card-text detalleTienda">${detalle}</p>
+                    <p class="card-text medidasTienda">Altura: ${alto} cm. // Diametro: ${diametro} cm.</p>
+                    <p class="card-text preciosTienda">$${precio}</p>
+                    <button data-id="${id}" class="btn btn-primary botonTarjetaTienda">COMPRAR</button>
                 </div>
             </div>`;
 }
@@ -50,7 +50,7 @@ function activarBotones() {
 
 function actualizarCantidadCarrito() {
     const cantidadCarrito = document.querySelector(".cuentaCarrito");
-    cantidadCarrito.textContent = `= ${carritoProductos.length}`;
+    cantidadCarrito.textContent = `=  ${carritoProductos.length} Productos en carrito`;
 }
 
 actualizarCantidadCarrito(); 
