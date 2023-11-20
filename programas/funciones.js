@@ -3,10 +3,9 @@ const contenedor = document.querySelector("div.contenedor#tienda-contenedor");
 
 function crearCardError() {
     return `<div class="card-error";">
-                <img src="#" alt="...">
+                <img src="../imagenes/errorCarga.jpeg" alt="Imagen Error">
                 <div class="card-body">
                     <h5 class="card-title">Error de Carga</h5>
-                    <p class="card-text">...</p>
                 </div>
             </div>`;
 }

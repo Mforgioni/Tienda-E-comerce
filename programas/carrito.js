@@ -2,9 +2,9 @@ const carritoProductos = JSON.parse(localStorage.getItem("miCarrito")) || [];
 
 function crearInfoCarrito() {
   const carritoElegido = document.getElementById("carritoElegido");
-  const totalElement = document.querySelector(".total h2");
+  const totalCompra = document.querySelector(".total h2");
 
-  if (carritoElegido && totalElement) {
+  if (carritoElegido && totalCompra) {
     carritoElegido.innerHTML = "";
 
     let total = 0;
@@ -25,14 +25,14 @@ function crearInfoCarrito() {
       total += producto.precio;
     });
 
-    totalElement.textContent = `Total: $${total}`;
+    totalCompra.textContent = `Total: $${total}`;
   }
 }
 
 function eliminarProducto(index) {
-  carritoProductos.splice(index, 1); // Elimina el producto en la posición 'index'
-  localStorage.setItem("miCarrito", JSON.stringify(carritoProductos)); // Actualiza el localStorage
-  crearInfoCarrito(); // Vuelve a crear la información del carrito en la interfaz
+  carritoProductos.splice(index, 1);
+  localStorage.setItem("miCarrito", JSON.stringify(carritoProductos)); 
+  crearInfoCarrito(); 
 }
 
 document.addEventListener("DOMContentLoaded", () => {

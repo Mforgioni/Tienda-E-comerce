@@ -5,11 +5,13 @@ body {
   font-weight: 900;
   background-color: rgba(0, 128, 0, 0.596);
 }
+
 h1 {
   margin-left: 2rem;
 }
 
 /*___________________________index modo movil_________________________________________*/
+
 .encabezado {
   display: flex;
   flex-direction: row;
@@ -25,9 +27,11 @@ h1 {
 .encabezado img {
   height: 9rem;
 }
+
 .encabezado h1 {
   background-color: rgba(255, 255, 255, 0.459);
 }
+
 .navegador {
   background-color: rgb(113, 173, 113);
   padding: 0.3rem 0 0.3rem 0;
@@ -36,6 +40,7 @@ h1 {
 .navegadorboton:hover {
   background-color: rgb(18, 78, 18);
 }
+
 .btn,
 .btn-outline-success,
 .me-2 {
@@ -44,9 +49,11 @@ h1 {
   font-weight: bold;
   border: solid white 1px;
 }
+
 .fa-solid {
   margin-left: 0.5rem;
 }
+
 .botonCarrito {
   display: flex;
   align-items: center;
@@ -78,6 +85,7 @@ footer {
   height: 4rem;
   padding: 0 1rem 0 1rem;
 }
+
 .redes {
   height: 30px;
   width: 30px;
@@ -92,6 +100,7 @@ footer {
   padding: 1rem;
   background-color: rgb(85, 131, 85);
 }
+
 .textos-acercade {
   border-radius: 14px;
   padding: 0.5rem;
@@ -99,11 +108,13 @@ footer {
   border-radius: 14px;
   box-shadow: 2px 5px 15px rgb(79, 114, 79);
 }
+
 h1 {
   text-align: center;
   padding: 0.1rem;
   margin: auto;
 }
+
 p {
   text-align: center;
   margin-top: 1rem;
@@ -118,12 +129,14 @@ p {
   padding: 1rem;
   background-color: rgb(85, 131, 85);
 }
+
 .textos-acercade-2 {
   border-radius: 14px;
   box-shadow: 2px 5px 15px rgb(79, 114, 79);
   padding: 0.5rem;
   background-color: rgb(113, 173, 113);
 }
+
 .textos-acercade-2 h1 {
   text-align: center;
   padding: 1rem 1rem 0 1rem;
@@ -132,6 +145,7 @@ p {
   background-color: rgba(255, 255, 255, 0.171);
   border-radius: 12px;
 }
+
 .textos-acercade-2 p {
   text-align: center;
   margin-top: 2rem;
@@ -139,12 +153,14 @@ p {
 }
 
 /*__________________________Tienda pag________________________*/
+
 .contenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: rgb(85, 131, 85);
 }
+
 .tarjetaTienda {
   border: solid 1px rgb(85, 131, 85);
   overflow: hidden;
@@ -152,28 +168,35 @@ p {
   box-shadow: 5px 5px 15px rgb(0, 0, 0);
   padding: 0.5rem;
 }
+
 .tarjetaTienda img {
   border-radius: 14px 14px 0 0;
 }
+
 .card-title {
   text-align: center;
 }
+
 .cuerpoTarjetaTienda {
   background-color: rgb(113, 173, 113);
   padding: 0.2rem;
 }
+
 .nombreTarjetaTienda {
   font-size: 2rem;
   margin-top: 0rem;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.281);
 }
+
 .detalleTienda {
   margin: 0;
 }
+
 .medidasTienda {
   margin: 0;
 }
+
 .preciosTienda {
   font-size: 2rem;
 }
@@ -182,14 +205,18 @@ p {
   flex-direction: column;
   border-radius: 0 0 14px 14px;
 }
+
 .botonTarjetaTienda {
   background-color: rgb(36, 107, 36);
   margin-bottom: 0.3rem;
 }
+
 .botonTarjetaTienda:hover {
   background-color: rgb(9, 56, 9);
 }
+
 /*__________________________carrito  pag________________________*/
+
 .maine {
   display: flex;
   text-align: center;
@@ -197,6 +224,7 @@ p {
   background-color: rgb(24, 66, 7);
   color: rgb(255, 255, 255);
 }
+
 .estiloCarrito {
   display: flex;
   flex-direction: row;
@@ -204,12 +232,14 @@ p {
   justify-content: space-around;
   background-color: rgb(85, 131, 85);
 }
+
 .estiloTarjetaCarrito {
   border: solid 1px black;
   border-radius: 14px;
   background-color: rgb(99, 212, 99);
   box-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
+
 .muestraElegida {
   overflow: hidden;
   display: flex;
@@ -233,22 +263,27 @@ p {
   background-color: rgb(113, 173, 113);
   border-radius: 0 0 14px 14px;
 }
+
 .nombreTarjeta {
   margin: 0;
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.521);
 }
+
 .precioTarjeta {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
 }
+
 .bontonCarritoQuitar {
   margin: 0.3rem;
   border-radius: 8px;
   background-color: rgb(9, 56, 9);
 }
+
 /*________________________ index modo web_______________________*/
+
 @media (min-width: 600px) {
   .navbar .container-fluid {
     display: flex;
