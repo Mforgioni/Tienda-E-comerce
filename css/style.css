@@ -1,5 +1,5 @@
 body {
-  padding-top: 15rem;
+  padding-top: 12rem;
   box-sizing: border-box;
   margin: 0;
   font-family: sans-serif;
@@ -29,7 +29,7 @@ p {
   background-size: 100% 100%;
   background-position: center;
   align-items: center;
-  height: 9rem;
+  height: 6rem;
   width: 100%;
   position: fixed;
   top: 0;
@@ -37,7 +37,7 @@ p {
 }
 
 .encabezado img {
-  height: 9rem;
+  height: 6rem;
 }
 
 .encabezado h1 {
@@ -46,7 +46,7 @@ p {
 
 .navbar {
   position: fixed;
-  top: 9rem;
+  top: 6rem;
   z-index: 1000;
   width: 100%;
 }

@@ -48,7 +48,7 @@ function activarBotones() {
 
 function actualizarCantidadCarrito() {
     const cantidadCarrito = document.querySelector(".cuentaCarrito");
-    cantidadCarrito.textContent = `=  ${carritoProductos.length} Productos`;
+    cantidadCarrito.textContent = `=  ${carritoProductos.length}`;
 }
 
 actualizarCantidadCarrito(); 
