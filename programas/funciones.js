@@ -5,7 +5,7 @@ function crearCardError() {
     return `<div class="card-error";">
                 <img src="../imagenes/errorCarga.jpeg" alt="Imagen Error">
                 <div class="card-body">
-                    <h5 class="card-title">Error de Carga</h5>
+                    <h5 class="card-title">ERROR DE CARGA</h5>
                 </div>
             </div>`;
 }
@@ -41,7 +41,6 @@ function activarBotones() {
             const pantallaElegida = pantallas.find((pantalla) => pantalla.id === id);
             carritoProductos.push(pantallaElegida);
             localStorage.setItem("miCarrito", JSON.stringify(carritoProductos));
-            console.log(carritoProductos);
             actualizarCantidadCarrito(); 
         });
     });
@@ -49,7 +48,7 @@ function activarBotones() {
 
 function actualizarCantidadCarrito() {
     const cantidadCarrito = document.querySelector(".cuentaCarrito");
-    cantidadCarrito.textContent = `=  ${carritoProductos.length} Productos en carrito`;
+    cantidadCarrito.textContent = `=  ${carritoProductos.length} Productos`;
 }
 
 actualizarCantidadCarrito(); 

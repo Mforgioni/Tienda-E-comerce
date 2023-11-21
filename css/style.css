@@ -1,4 +1,5 @@
 body {
+  padding-top: 15rem;
   box-sizing: border-box;
   margin: 0;
   font-family: sans-serif;
@@ -8,6 +9,14 @@ body {
 
 h1 {
   margin-left: 2rem;
+  text-align: center;
+  padding: 0.1rem;
+  margin: auto;
+}
+
+p {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 /*___________________________index modo movil_________________________________________*/
@@ -22,6 +31,9 @@ h1 {
   align-items: center;
   height: 9rem;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 .encabezado img {
@@ -30,6 +42,13 @@ h1 {
 
 .encabezado h1 {
   background-color: rgba(255, 255, 255, 0.459);
+}
+
+.navbar {
+  position: fixed;
+  top: 9rem;
+  z-index: 1000;
+  width: 100%;
 }
 
 .navegador {
@@ -103,21 +122,10 @@ footer {
 
 .textos-acercade {
   border-radius: 14px;
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: rgb(113, 173, 113);
   border-radius: 14px;
   box-shadow: 2px 5px 15px rgb(79, 114, 79);
-}
-
-h1 {
-  text-align: center;
-  padding: 0.1rem;
-  margin: auto;
-}
-
-p {
-  text-align: center;
-  margin-top: 1rem;
 }
 
 /*__________________________contacto pag__________________________________*/
@@ -143,13 +151,19 @@ p {
   margin: auto;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.171);
-  border-radius: 12px;
+  border-radius: 14px;
 }
 
 .textos-acercade-2 p {
   text-align: center;
   margin-top: 2rem;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+.textos-acercade-2 ul li {
+  text-align: center;
+  font-size: 1.2rem;
+  list-style-type: none;
 }
 
 /*__________________________Tienda pag________________________*/
@@ -183,7 +197,7 @@ p {
 }
 
 .nombreTarjetaTienda {
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-top: 0rem;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.281);
@@ -198,7 +212,7 @@ p {
 }
 
 .preciosTienda {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .card-body {
   display: flex;
@@ -345,9 +359,6 @@ p {
     gap: 7rem;
   }
 
-  .navbar .container-fluid a {
-    width: 12rem;
-  }
   h1 {
     font-size: 4rem;
   }
@@ -355,12 +366,12 @@ p {
   .carousel-inner {
     display: flex;
     align-items: center;
-    height: 60vh; /* Ajusta la altura según la altura de la ventana */
+    height: 60vh;
   }
 
   .carousel-item {
-    text-align: center; /* Alinea el contenido en el centro verticalmente */
-    width: 100%; /* Asegura que el ancho sea el 100% del contenedor */
+    text-align: center;
+    width: 100%;
     height: 100%;
   }
 
@@ -370,3 +381,97 @@ p {
     object-fit: fill;
   }
 }
+/*________________________ contanto modo web_______________________*/
+
+@media (min-width: 1300px) {
+  .contenedor-acercade-2 {
+    align-items: center;
+    height: auto;
+  }
+
+  .textos-acercade-2 {
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  .textos-acercade-2 h1 {
+    font-size: 2.3rem;
+    padding: 0 5rem 0 5rem;
+  }
+
+  .textos-acercade-2 p {
+    font-size: 1.2rem;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .textos-acercade-2 ul li {
+    text-decoration: none;
+    font-size: 1.2rem;
+    list-style-type: none;
+  }
+}
+
+@media (min-width: 950px) {
+  .contenedor-acercade-2 {
+    align-items: center;
+    height: auto;
+  }
+
+  .textos-acercade-2 {
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  .textos-acercade-2 h1 {
+    font-size: 2.3rem;
+    padding: 0 5rem 0 5rem;
+  }
+
+  .textos-acercade-2 p {
+    font-size: 1.2rem;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .textos-acercade-2 ul li {
+    text-decoration: none;
+    font-size: 1.2rem;
+    list-style-type: none;
+  }
+}
+
+@media (min-width: 920px) {
+  .contenedor-acercade-2 {
+    align-items: center;
+    height: auto;
+  }
+
+  .textos-acercade-2 {
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  .textos-acercade-2 h1 {
+    font-size: 2.3rem;
+    padding: 0 5rem 0 5rem;
+  }
+
+  .textos-acercade-2 p {
+    font-size: 1.2rem;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .textos-acercade-2 ul li {
+    text-decoration: none;
+    font-size: 1.2rem;
+    list-style-type: none;
+  }
+}
+
+
+
