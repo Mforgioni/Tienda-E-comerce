@@ -12,7 +12,7 @@ function crearCardError() {
 
 function crearCardHtml({ nombre, imagen, precio, tipo, id, alto, diametro, detalle }) {
     return `<div class="card tarjetaTienda" style="width: 20rem;">
-                <img src="${imagen}" alt="...">
+                <img src="${imagen}" alt="Foto velador">
                 <div class="card-body cuerpoTarjetaTienda">
                     <h5 class="card-title nombreTarjetaTienda">${nombre}</h5>
                     <p class="card-text detalleTienda">${detalle}</p>
