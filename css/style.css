@@ -68,7 +68,10 @@ p {
   font-weight: bold;
   border: solid white 1px;
 }
-
+.margenBotones {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
 .fa-solid {
   margin-left: 0.5rem;
 }
@@ -186,10 +189,11 @@ footer {
 
 .tarjetaTienda {
   border: solid 1px rgb(85, 131, 85);
+  border-radius: 14px;
   overflow: hidden;
   margin: 0.4rem;
   box-shadow: 5px 5px 15px rgb(0, 0, 0);
-  padding: 0.5rem;
+  padding: 0.3rem;
 }
 
 .tarjetaTienda img {
