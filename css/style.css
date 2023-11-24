@@ -63,10 +63,12 @@ p {
 .btn,
 .btn-outline-success,
 .me-2 {
-  height: 2.5rem;
+  height: 2rem;
   color: white;
   font-weight: bold;
   border: solid white 1px;
+  margin-top: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 .margenBotones {
   margin-left: 0.3rem;

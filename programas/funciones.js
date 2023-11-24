@@ -45,6 +45,8 @@ function activarBotones() {
             Swal.fire({
                 title: `${pantallaElegida.nombre} se agrego al carrito`,
                 icon: "success",
+                iconColor: "green",
+                confirmButtonColor: "green",
                 customClass: {
                     popup: "infoTiendaAgregado", // Clase para el mensaje
                   },

@@ -42,6 +42,7 @@ function eliminarProducto(index) {
     position: "center",
     color: "black",
     icon: "warning",
+    iconColor: "red",
     title: `${nombreProducto} Eliminado del carrito`,
     showConfirmButton: false,
     timer: 1500,

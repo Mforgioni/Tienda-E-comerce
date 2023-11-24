@@ -10,6 +10,7 @@ const pantallas = [
     { id: 9, nombre: 'Velador Paris', imagen: '../imagenes/deco9.jpg', precio: 25000, tipo: 'velador', alto: 40, diametro: 20, detalle: "viderio, cromado y jaqcard" },
     { id: 10, nombre: 'Lampara Nápoles', imagen: '../imagenes/deco10.jpg', precio: 58000, tipo: 'lampara', alto: 50, diametro: 25, detalle: "Ceramica efera 16 cm. y lino" },
     { id: 11, nombre: 'Velador Cilindrico', imagen: '../imagenes/deco11.jpg', precio: 48000, tipo: 'velador', alto: 40, diametro: 20, detalle: "Cristal y metal cromo" },
+    { id: 12, nombre: 'Velador Bari', imagen: '../imagenes/deco12.jpg', precio: 58000, tipo: 'velador', alto: 45, diametro: 20, detalle: "Cristal macizo facetado y cromo" },
     { id: 13, nombre: 'Velador Bari "M"', imagen: '../imagenes/deco13.jpg', precio: 58000, tipo: 'velador', alto: 40, diametro: 20, detalle: "Cristal macizo facetado y cromo" },
     { id: 14, nombre: 'Velador Cilindrico "S"', imagen: '../imagenes/deco14.jpg', precio: 38000, tipo: 'velador', alto: 40, diametro: 20, detalle: "Ceramica y metal cromado" },
     { id: 15, nombre: 'veladotr Tokio', imagen: '../imagenes/deco15.jpg', precio: 28000, tipo: 'velador', alto: 40, diametro: 20, detalle: "Ceramica y metal cromado" },
