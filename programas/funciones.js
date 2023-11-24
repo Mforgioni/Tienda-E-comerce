@@ -42,6 +42,13 @@ function activarBotones() {
             carritoProductos.push(pantallaElegida);
             localStorage.setItem("miCarrito", JSON.stringify(carritoProductos));
             actualizarCantidadCarrito(); 
+            Swal.fire({
+                title: `${pantallaElegida.nombre} se agrego al carrito`,
+                icon: "success",
+                customClass: {
+                    popup: "infoTiendaAgregado", // Clase para el mensaje
+                  },
+              });
         });
     });
 }
