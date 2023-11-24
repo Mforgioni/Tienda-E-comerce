@@ -246,6 +246,10 @@ footer {
 
 /*__________________________carrito  pag________________________*/
 
+.cuerpoCarrito {
+  padding-top: 10rem;
+}
+
 .maine {
   display: flex;
   text-align: center;
@@ -311,6 +315,12 @@ footer {
   background-color: rgb(9, 56, 9);
 }
 
+.infoCarritoEliminado {
+  width: 12rem;
+  background-color: rgb(152, 206, 152);
+  font-size: 0.6rem;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+}
 /*________________________ index modo web_______________________*/
 
 @media (min-width: 600px) {

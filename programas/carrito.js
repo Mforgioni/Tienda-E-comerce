@@ -30,9 +30,25 @@ function crearInfoCarrito() {
 }
 
 function eliminarProducto(index) {
+  const productoEliminado = carritoProductos[index];
+  const nombreProducto = productoEliminado.nombre;
+
   carritoProductos.splice(index, 1);
   localStorage.setItem("miCarrito", JSON.stringify(carritoProductos)); 
+
   crearInfoCarrito(); 
+
+  Swal.fire({
+    position: "center",
+    color: "black",
+    icon: "warning",
+    title: `${nombreProducto} Eliminado del carrito`,
+    showConfirmButton: false,
+    timer: 1500,
+    customClass: {
+      popup: "infoCarritoEliminado", // Clase para el mensaje
+    },
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {

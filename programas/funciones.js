@@ -1,7 +1,7 @@
 const carritoProductos = JSON.parse(localStorage.getItem("miCarrito")) || [];
 const contenedor = document.querySelector("div.contenedor#tienda-contenedor");
 
-function crearCardError() {
+function crearTarjetaError() {
     return `<div class="card-error";">
                 <img src="../imagenes/errorCarga.jpeg" alt="Imagen Error">
                 <div class="card-body">
@@ -10,7 +10,7 @@ function crearCardError() {
             </div>`;
 }
 
-function crearCardHtml({ nombre, imagen, precio, tipo, id, alto, diametro, detalle }) {
+function crearTarjeta({ nombre, imagen, precio, tipo, id, alto, diametro, detalle }) {
     return `<div class="card tarjetaTienda" style="width: 20rem;">
                 <img src="${imagen}" alt="Foto velador">
                 <div class="card-body cuerpoTarjetaTienda">
@@ -26,10 +26,10 @@ function crearCardHtml({ nombre, imagen, precio, tipo, id, alto, diametro, detal
 function cargarProductos() {
     contenedor.innerHTML = "";
     if (pantallas.length > 0) {
-        pantallas.forEach((pantalla) => contenedor.innerHTML += crearCardHtml(pantalla));
+        pantallas.forEach((pantalla) => contenedor.innerHTML += crearTarjeta(pantalla));
         activarBotones();
     } else {
-        contenedor.innerHTML = crearCardError();
+        contenedor.innerHTML = crearTarjetaError();
     }
 }
 
