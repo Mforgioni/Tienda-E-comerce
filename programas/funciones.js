@@ -11,7 +11,7 @@ function crearTarjetaError() {
 }
 
 function crearTarjeta({ nombre, imagen, precio, tipo, id, alto, diametro, detalle }) {
-    return `<div class="card tarjetaTienda" style="width: 20rem;">
+    return `<div class="card tarjetaTienda" style="width: 19rem;">
                 <img src="${imagen}" alt="Foto velador">
                 <div class="card-body cuerpoTarjetaTienda">
                     <h5 class="card-title nombreTarjetaTienda">${nombre}</h5>
