@@ -1,5 +1,6 @@
 const carritoProductos = JSON.parse(localStorage.getItem("miCarrito")) || [];
 const contenedor = document.querySelector("div.contenedor#tienda-contenedor");
+const pantallas = []
 
 function crearTarjetaError() {
     return `<div class="card-error";">
@@ -18,7 +19,7 @@ function crearTarjeta({ nombre, imagen, precio, tipo, id, alto, diametro, detall
                     <p class="card-text detalleTienda">${detalle}</p>
                     <p class="card-text medidasTienda">Altura: ${alto} cm. // Diametro: ${diametro} cm.</p>
                     <p class="card-text preciosTienda">$${precio}</p>
-                    <button data-id="${id}" class="btn btn-primary botonTarjetaTienda">COMPRAR</button>
+                    <button data-id="${id}" class="btn btn-primary botonTarjetaTienda">AGREGAR</button>
                 </div>
             </div>`;
 }
@@ -61,4 +62,12 @@ function actualizarCantidadCarrito() {
 }
 
 actualizarCantidadCarrito(); 
-cargarProductos();
+
+function arrayPantallas() {
+    fetch("/programas/pantallas.json")
+    .then((res) => res.json() )
+    .then((data) => pantallas.push(...data))
+    .then(() => cargarProductos())
+}
+
+arrayPantallas()
