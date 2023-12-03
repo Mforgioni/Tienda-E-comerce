@@ -49,7 +49,7 @@ function activarBotones() {
                 iconColor: "green",
                 confirmButtonColor: "green",
                 customClass: {
-                    popup: "infoTiendaAgregado", // Clase para el mensaje
+                    popup: "infoTiendaAgregado", 
                   },
               });
         });

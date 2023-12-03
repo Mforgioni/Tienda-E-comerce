@@ -329,6 +329,11 @@ footer {
   font-size: 0.6rem;
   box-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
+.infoGracias {
+  background-color: rgb(85, 131, 85);
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+  color: white;
+}
 /*________________________ index modo web_______________________*/
 
 @media (min-width: 600px) {

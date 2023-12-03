@@ -1,4 +1,5 @@
 const carritoProductos = JSON.parse(localStorage.getItem("miCarrito")) || [];
+const botonComprar = document.getElementById("comprarB");
 
 function crearInfoCarrito() {
   const carritoElegido = document.getElementById("carritoElegido");
@@ -37,7 +38,6 @@ function eliminarProducto(index) {
   localStorage.setItem("miCarrito", JSON.stringify(carritoProductos)); 
 
   crearInfoCarrito(); 
-
   Swal.fire({
     position: "center",
     color: "black",
@@ -47,11 +47,45 @@ function eliminarProducto(index) {
     showConfirmButton: false,
     timer: 1500,
     customClass: {
-      popup: "infoCarritoEliminado", // Clase para el mensaje
+      popup: "infoCarritoEliminado", 
     },
+  });
+}
+
+function graciasCompra() {
+  Swal.fire({
+    title: "Sweet!",
+    text: "Modal with a custom image.",
+    imageUrl: "https://unsplash.it/400/200",
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: "Custom image"
   });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   crearInfoCarrito();
 });
+
+botonComprar.addEventListener("click", () => {
+  localStorage.removeItem("miCarrito");
+  carritoProductos.length = 0;
+  crearInfoCarrito();
+
+  Swal.fire({
+    title: "GRACIAS POR SU COMPRA",
+    imageUrl: "../imagenes/logo-decopantalle.jpg",
+    imageWidth: 200,
+    imageHeight: 200,
+    imageAlt: "Custom image",
+    confirmButtonColor: "green",
+    customClass: {
+      popup: "infoGracias", 
+    },
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.location.href = "/paginas/tienda.html";
+    }
+  });
+});
+
