@@ -344,6 +344,7 @@ footer {
   font-weight: bold;
   padding: 0.6rem;
   margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.178);
 }
 
 #totalCred {
@@ -356,7 +357,7 @@ footer {
 .botonComprar {
   background: rgb(8, 73, 8);
   border-radius: 14px;
-  border: solid rgb(250, 248, 248) 2px;
+  border: solid rgb(250, 248, 248) 1px;
   box-shadow: 5px 5px 15px rgb(0, 0, 0);
   height: 3rem;
   width: 9rem;

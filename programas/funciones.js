@@ -1,6 +1,6 @@
 const carritoProductos = JSON.parse(localStorage.getItem("miCarrito")) || [];
 const contenedor = document.querySelector("div.contenedor#tienda-contenedor");
-const pantallas = []
+const pantallas = [];
 
 function crearTarjetaError() {
     return `<div class="card-error";">
