@@ -4,11 +4,14 @@ const botonComprar = document.getElementById("comprarB");
 function crearInfoCarrito() {
   const carritoElegido = document.getElementById("carritoElegido");
   const totalCompra = document.querySelector(".total h2");
+  const totalCredito = document.getElementById("totalCred")
 
   if (carritoElegido && totalCompra) {
     carritoElegido.innerHTML = "";
 
     let total = 0;
+    let credito = 0.10;
+
 
     carritoProductos.forEach((producto, index) => {
       const cardHtml = `
@@ -27,6 +30,9 @@ function crearInfoCarrito() {
     });
 
     totalCompra.textContent = `Total: $${total}`;
+    const totalConCredito = total * (1 + credito);
+    const totalConCreditoRedondeado = totalConCredito.toFixed(2)
+    totalCredito.textContent = `Total en 3 a 6 ctas: $${totalConCreditoRedondeado}`;
   }
 }
 

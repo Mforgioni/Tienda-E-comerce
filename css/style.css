@@ -70,10 +70,12 @@ p {
   margin-top: 0.3rem;
   margin-bottom: 0.2rem;
 }
+
 .margenBotones {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
 }
+
 .fa-solid {
   margin-left: 0.5rem;
 }
@@ -174,8 +176,6 @@ footer {
   list-style-type: none;
 }
 
-
-
 /*__________________________Tienda pag________________________*/
 
 .contenedor {
@@ -241,6 +241,7 @@ footer {
 .botonTarjetaTienda:hover {
   background-color: rgb(9, 56, 9);
 }
+
 .infoTiendaAgregado {
   width: 13rem;
   background-color: rgb(255, 255, 255);
@@ -325,21 +326,33 @@ footer {
   font-size: 0.6rem;
   box-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
+
 .infoGracias {
   background-color: rgb(85, 131, 85);
   box-shadow: 5px 5px 15px rgb(0, 0, 0);
   color: white;
 }
+
 .total {
   margin-top: 1rem;
   text-align: center;
   background-color: rgb(4, 71, 4);
   color: white;
 }
+
 .total h2 {
-font-weight: bold;
-padding: 1rem;
+  font-weight: bold;
+  padding: 0.6rem;
+  margin-bottom: 0;
 }
+
+#totalCred {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
 .botonComprar {
   background: rgb(8, 73, 8);
   border-radius: 14px;
@@ -352,6 +365,7 @@ padding: 1rem;
   font-weight: bold;
   font-size: 1.4rem;
 }
+
 /*________________________ index modo web_______________________*/
 
 @media (min-width: 600px) {
@@ -437,6 +451,7 @@ padding: 1rem;
     object-fit: fill;
   }
 }
+
 /*________________________ contanto modo web_______________________*/
 
 @media (min-width: 1300px) {
