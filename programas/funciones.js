@@ -64,10 +64,11 @@ function actualizarCantidadCarrito() {
 actualizarCantidadCarrito(); 
 
 function arrayPantallas() {
-    fetch("/programas/pantallas.json")
+    fetch("../programas/pantallas.json")
     .then((res) => res.json() )
     .then((data) => pantallas.push(...data))
     .then(() => cargarProductos())
 }
 
 arrayPantallas()
+
