@@ -92,7 +92,7 @@ botonComprar.addEventListener("click", () => {
     },
   }).then((result) => {
     if (result.isConfirmed) {
-      window.location.href = "/paginas/tienda.html";
+      window.location.href = "../paginas/tienda.html";
     }
   });
 });
